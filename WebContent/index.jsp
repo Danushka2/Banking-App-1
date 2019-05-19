@@ -1,15 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    <!-- Check whether session is set -->
-	<!-- If session is set, redirect to dashboard -->
-    <%
-    	if(session.getAttribute("bankID") != null ) {
-    		response.sendRedirect("dashboard.jsp");
-    	}
-    %>
-    
-    <!-- session check ends -->
 
 <!DOCTYPE html>
 <html>
@@ -37,6 +27,8 @@
     </head>
 
     <body>
+        
+
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -49,10 +41,10 @@
                     <div class="col-md-6">
                         <div class="login-wrapper">
                             <p>LOGIN</p>
-                            <form action="LoginServlet" method="POST" class="login">
-                                <input type="text" id="bankId" name="bankID" placeholder="Banking ID">
-                                <input type="password" id="password" name="password" placeholder="Password">
-                                <button class="btn btn-orange" type="submit" >LOGIN</button>
+                            <form action="" class="login">
+                                <input type="text" id="bankId" placeholder="Banking ID">
+                                <input type="password" id="password" placeholder="Password">
+                                <button class="btn btn-orange">LOGIN</button>
                                 <a href="forgot-password.jsp">Forgot password?</a>
                             </form>
                         </div>
@@ -65,9 +57,9 @@
                         <div class="col-md-12">
                             <div class="footer-content">
                                 <hr>
-                                <p class="footer-para"> Bank name - Retail Version © year</p>
+                                <p class="footer-para"> Bank name - Retail Version Â© year</p>
                                 <a href="#" class="link about-us">About Us</a> <span class = "devide-span">|</span>
-                                <a href="contact-us.jsp" class="link contact-us">Contact Us</a>
+                                <a href="Customer/contact-us.jsp" class="link contact-us">Contact Us</a>
                             </div>
                         </div>
                     </div>
